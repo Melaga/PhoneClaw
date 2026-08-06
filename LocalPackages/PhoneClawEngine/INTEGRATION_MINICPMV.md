@@ -188,7 +188,7 @@ UI 需要:
 
 ### 3.3 文档 + Release Notes
 
-- README.md / README_EN.md 加 MiniCPM-V 支持说明
+- README.md / README_zh.md 加 MiniCPM-V 支持说明
 - v1.4.0 release notes
 - 配置页文案对每个模型的能力边界写清楚
 

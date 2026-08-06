@@ -60,6 +60,6 @@ This keeps local agent behavior more predictable and makes privacy boundaries vi
 ## Useful links
 
 - [README](../README.md)
-- [English README](../README_EN.md)
+- [中文 README](../README_zh.md)
 - [PhoneClaw Skill System](SKILL_SYSTEM.md)
 - [iOS Memory and Context Limits](IOS_MEMORY_LIMITS.md)

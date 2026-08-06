@@ -13,11 +13,11 @@
 <meta property="og:title" content="Gemma 4 on phone with LiteRT-LM - PhoneClaw">
 <meta property="og:description" content="PhoneClaw uses Gemma 4 E2B / E4B via LiteRT-LM and MiniCPM-V 4.6 for multimodal mobile AI agent scenarios.">
 <meta property="og:url" content="https://kellyvv.github.io/PhoneClaw/on-device-gemma/">
-<meta property="og:image" content="https://kellyvv.github.io/PhoneClaw/assets/banner.jpg">
+<meta property="og:image" content="https://kellyvv.github.io/PhoneClaw/assets/social-card.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Gemma 4 on phone with LiteRT-LM">
 <meta name="twitter:description" content="On-device model choices, memory constraints, and mobile agent patterns in PhoneClaw.">
-<meta name="twitter:image" content="https://kellyvv.github.io/PhoneClaw/assets/banner.jpg">
+<meta name="twitter:image" content="https://kellyvv.github.io/PhoneClaw/assets/social-card.png">
 
 <link rel="icon" href="../assets/app-icon.png">
 <link rel="stylesheet" href="../assets/style.css">
@@ -79,7 +79,7 @@
       <h1>Gemma 4 on phone, shaped by mobile limits.</h1>
       <p class="lede">PhoneClaw uses Gemma 4 E2B / E4B via LiteRT-LM for local agent tasks, with MiniCPM-V 4.6 for image understanding and LIVE camera scenarios.</p>
       <div class="hero-actions">
-        <a class="button primary" href="https://github.com/kellyvv/PhoneClaw#model-preparation">Model setup</a>
+        <a class="button primary" href="https://github.com/kellyvv/PhoneClaw#3-optional-pre-download-a-model-locally">Model setup</a>
         <a class="button" href="../skills/">See Skills</a>
       </div>
     </div>
@@ -98,23 +98,26 @@
       </div>
       <table class="privacy-table">
         <thead>
-          <tr><th>Model</th><th>Runtime role</th><th>Best fit</th></tr>
+          <tr><th>Model</th><th>Runtime role</th><th>Best fit</th><th>Requirements</th></tr>
         </thead>
         <tbody>
           <tr>
             <td data-label="Model">Gemma 4 E2B via LiteRT-LM</td>
             <td data-label="Runtime role">Lightweight local language model</td>
             <td data-label="Best fit">Chat, translation, single-turn queries, simple Skills, lower memory pressure.</td>
+            <td data-label="Requirements">A16 and above</td>
           </tr>
           <tr>
             <td data-label="Model">Gemma 4 E4B via LiteRT-LM</td>
             <td data-label="Runtime role">More capable local language model</td>
             <td data-label="Best fit">Multi-turn tool use, richer task routing, and complex agent workflows on stronger devices.</td>
+            <td data-label="Requirements">iPhone 15 Pro and above</td>
           </tr>
           <tr>
             <td data-label="Model">MiniCPM-V 4.6</td>
             <td data-label="Runtime role">Multimodal understanding</td>
-            <td data-label="Best fit">Image Q&A and LIVE camera understanding on phone.</td>
+            <td data-label="Best fit">Image Q&amp;A and LIVE camera understanding on phone.</td>
+            <td data-label="Requirements">A17 Pro and above recommended</td>
           </tr>
         </tbody>
       </table>
@@ -176,6 +179,14 @@
         <article class="data-row remote">
           <h3>What about images and camera?</h3>
           <p>MiniCPM-V 4.6 handles image understanding and LIVE camera scenarios.</p>
+        </article>
+        <article class="data-row warn">
+          <h3>Memory reality</h3>
+          <p>Measured during on-device crash forensics (TestFlight build 44, 2026-07): Gemma 4 E2B peaks around 3.1 GB resident, image input adds roughly 0.8 GB more, and LIVE mode pushes whole-device peak use to about 4.3 GB — against an app-usable ceiling of roughly 4 GB on 6 GB RAM iPhones. See <a href="../benchmarks/">Benchmarks</a> for the numbers.</p>
+        </article>
+        <article class="data-row">
+          <h3>Which runtime is this?</h3>
+          <p>PhoneClaw's on-device runtime is Google LiteRT (running Gemma 4 E2B / E4B) and MiniCPM-V 4.6 — not Apple MLX.</p>
         </article>
       </div>
     </div>

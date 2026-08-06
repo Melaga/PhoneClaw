@@ -13,11 +13,11 @@
 <meta property="og:title" content="PhoneClaw FAQ - mobile AI agent framework facts">
 <meta property="og:description" content="Direct answers about PhoneClaw's local phone runtime, on-device models, native mobile Skills, data flow, LiveLand, and Mac Gateway inference.">
 <meta property="og:url" content="https://kellyvv.github.io/PhoneClaw/faq/">
-<meta property="og:image" content="https://kellyvv.github.io/PhoneClaw/assets/banner.jpg">
+<meta property="og:image" content="https://kellyvv.github.io/PhoneClaw/assets/social-card.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="PhoneClaw FAQ">
 <meta name="twitter:description" content="What PhoneClaw is, what stays local, and how the mobile Agent framework works.">
-<meta name="twitter:image" content="https://kellyvv.github.io/PhoneClaw/assets/banner.jpg">
+<meta name="twitter:image" content="https://kellyvv.github.io/PhoneClaw/assets/social-card.png">
 
 <link rel="icon" href="../assets/app-icon.png">
 <link rel="stylesheet" href="../assets/style.css">
@@ -37,6 +37,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "PhoneClaw is a mobile-native local AI Agent framework for phones and edge devices. Its iOS runtime runs on-device models and native iOS Skills on the phone by default, with optional Mac Gateway remote inference for heavier local models."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which PhoneClaw project is this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "PhoneClaw (this project) is unrelated to the Android automation repo \"rohanarun/phoneclaw\" or the \"phoneclaw\" GitHub organization. Android app-store search results may also show a separate app with the same name. This site documents the open-source PhoneClaw framework at github.com/kellyvv/PhoneClaw."
           }
         },
         {
@@ -147,6 +155,10 @@
         <h2>What is PhoneClaw?</h2>
         <p>PhoneClaw is a mobile-native local AI Agent framework for phones and edge devices. Its iOS runtime runs on-device models and native iOS Skills on the phone by default, with optional Mac Gateway remote inference for heavier local models.</p>
       </article>
+      <article class="data-row remote">
+        <h2>Which PhoneClaw project is this?</h2>
+        <p>PhoneClaw (this project) is unrelated to the Android automation repo "rohanarun/phoneclaw" or the "phoneclaw" GitHub organization. Android app-store search results may also show a separate app with the same name. This site documents the open-source PhoneClaw framework at <a href="https://github.com/kellyvv/PhoneClaw">github.com/kellyvv/PhoneClaw</a>.</p>
+      </article>
       <article class="data-row warn">
         <h2>What kind of framework is PhoneClaw?</h2>
         <p>PhoneClaw is a mobile-native Agent framework for phones and edge devices. It combines local model execution, native mobile Skills, permission-scoped data access, Live / LiveLand interaction, and optional LAN Mac inference.</p>
@@ -165,7 +177,7 @@
       </article>
       <article class="data-row">
         <h2>What models does PhoneClaw use?</h2>
-        <p>PhoneClaw uses Gemma 4 E2B and E4B via LiteRT-LM for local language tasks, and MiniCPM-V 4.6 for image understanding and LIVE camera scenarios.</p>
+        <p>PhoneClaw uses <a href="../on-device-gemma/">Gemma 4 E2B and E4B</a> via LiteRT-LM for local language tasks, and MiniCPM-V 4.6 for image understanding and LIVE camera scenarios.</p>
       </article>
       <article class="data-row remote">
         <h2>What native iOS Skills can PhoneClaw use?</h2>
@@ -173,7 +185,7 @@
       </article>
       <article class="data-row">
         <h2>What is PhoneClaw Gateway?</h2>
-        <p>PhoneClaw Gateway pairs an iPhone with a Mac on the same local network. The Mac can provide heavier inference through Ollama or supported CLI providers, while the iPhone keeps the agent UI, Skills, permissions, and task flow.</p>
+        <p><a href="../mac-remote/">PhoneClaw Gateway</a> pairs an iPhone with a Mac on the same local network. The Mac can provide heavier inference through Ollama or supported CLI providers, while the iPhone keeps the agent UI, Skills, permissions, and task flow.</p>
       </article>
     </div>
   </section>
@@ -187,6 +199,7 @@
       <a href="../on-device-gemma/">Models</a>
       <a href="../skills/">Skills</a>
       <a href="../liveland/">LiveLand</a>
+      <a href="../mac-remote/">Mac Remote</a>
       <a href="../privacy/">Privacy &amp; Data Flow</a>
       <a href="https://github.com/kellyvv/PhoneClaw">GitHub</a>
     </div>

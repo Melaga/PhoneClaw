@@ -33,3 +33,26 @@ jobs:
           path: site
       - id: deployment
         uses: actions/deploy-pages@v4
+      - name: Notify IndexNow
+        continue-on-error: true
+        run: |
+          curl -sS -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            -d '{
+              "host": "kellyvv.github.io",
+              "key": "0bf623a9a5805fafd04bad9f20177812",
+              "keyLocation": "https://kellyvv.github.io/PhoneClaw/0bf623a9a5805fafd04bad9f20177812.txt",
+              "urlList": [
+                "https://kellyvv.github.io/PhoneClaw/",
+                "https://kellyvv.github.io/PhoneClaw/zh/",
+                "https://kellyvv.github.io/PhoneClaw/ja/",
+                "https://kellyvv.github.io/PhoneClaw/privacy/",
+                "https://kellyvv.github.io/PhoneClaw/mac-remote/",
+                "https://kellyvv.github.io/PhoneClaw/mobile-agent-framework/",
+                "https://kellyvv.github.io/PhoneClaw/on-device-gemma/",
+                "https://kellyvv.github.io/PhoneClaw/skills/",
+                "https://kellyvv.github.io/PhoneClaw/liveland/",
+                "https://kellyvv.github.io/PhoneClaw/faq/",
+                "https://kellyvv.github.io/PhoneClaw/benchmarks/"
+              ]
+            }'

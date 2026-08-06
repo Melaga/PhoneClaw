@@ -17,11 +17,11 @@
 <meta property="og:title" content="PhoneClaw - mobile-native local AI agent framework for phones">
 <meta property="og:description" content="A local-first mobile Agent framework for phones and edge devices with on-device inference, native iOS Skills, Live / LiveLand interaction, and optional Mac Gateway remote inference.">
 <meta property="og:url" content="https://kellyvv.github.io/PhoneClaw/">
-<meta property="og:image" content="https://kellyvv.github.io/PhoneClaw/assets/banner.jpg">
+<meta property="og:image" content="https://kellyvv.github.io/PhoneClaw/assets/social-card.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="PhoneClaw - mobile-native local AI agent framework">
 <meta name="twitter:description" content="A local-first mobile Agent framework for phones with on-device inference, native iOS Skills, and optional Mac Gateway remote inference.">
-<meta name="twitter:image" content="https://kellyvv.github.io/PhoneClaw/assets/banner.jpg">
+<meta name="twitter:image" content="https://kellyvv.github.io/PhoneClaw/assets/social-card.png">
 
 <link rel="icon" href="assets/app-icon.png">
 <link rel="stylesheet" href="assets/style.css">
@@ -37,7 +37,8 @@
       "url": "https://kellyvv.github.io/PhoneClaw/",
       "logo": "https://kellyvv.github.io/PhoneClaw/assets/app-icon.png",
       "sameAs": [
-        "https://github.com/kellyvv/PhoneClaw"
+        "https://github.com/kellyvv/PhoneClaw",
+        "https://testflight.apple.com/join/YuUSwq78"
       ]
     },
     {
@@ -89,7 +90,7 @@
       "applicationCategory": "ProductivityApplication",
       "applicationSubCategory": "mobile AI agent framework / phone AI agent / on-device AI agent / phone harness / phone loop",
       "operatingSystem": "Mobile phones and edge devices; iOS 17+ runtime",
-      "description": "PhoneClaw is a mobile-native local AI agent framework for phones and edge devices. Its iOS runtime runs inference and native iOS Skills on-device using Gemma 4 E2B / E4B via LiteRT and MiniCPM-V 4.6, with a fully offline local mode.",
+      "description": "PhoneClaw is a mobile-native local AI agent framework for phones and edge devices. Its iOS runtime runs inference and native iOS Skills on-device using Gemma 4 E2B / E4B via LiteRT and MiniCPM-V 4.6, with a fully offline local mode. PhoneClaw's on-device runtime is Google LiteRT (running Gemma 4 E2B / E4B) and MiniCPM-V 4.6 — not Apple MLX.",
       "softwareRequirements": "Mobile phone runtime, on-device model execution, native mobile Skills, scoped permissions, optional LAN Mac Gateway",
       "featureList": [
         "mobile AI agent framework",
@@ -120,7 +121,8 @@
         "@id": "https://kellyvv.github.io/PhoneClaw/#organization"
       },
       "sameAs": [
-        "https://github.com/kellyvv/PhoneClaw"
+        "https://github.com/kellyvv/PhoneClaw",
+        "https://testflight.apple.com/join/YuUSwq78"
       ]
     },
     {
@@ -143,7 +145,7 @@
 
 <nav class="site-nav">
   <div class="wrap">
-    <a class="brand" href="./"><img src="assets/app-icon.png" alt="">PhoneClaw</a>
+    <a class="brand" href="./"><img src="assets/app-icon.png" alt="PhoneClaw app icon">PhoneClaw</a>
     <div class="nav-links">
       <a href="#facts">Facts</a>
       <a href="#stack">Stack</a>
@@ -174,7 +176,7 @@
         <li><strong>Phone-first runtime</strong><span>Memory budgets, permissions, widgets, LiveLand</span></li>
         <li><strong>Optional edge inference</strong><span>Mac Gateway with Ollama or CLI models</span></li>
       </ul>
-      <p class="disamb">PhoneClaw is built for mobile devices, native mobile capabilities, and phone-first local agent workflows.</p>
+      <p class="disamb">PhoneClaw is built for mobile devices, native mobile capabilities, and phone-first local agent workflows. PhoneClaw (this project) is unrelated to the Android automation repo "rohanarun/phoneclaw" or the "phoneclaw" GitHub organization. Android app-store search results may also show a separate app with the same name.</p>
     </div>
   </div>
 </header>
@@ -260,22 +262,22 @@
         </figure>
         <div class="capability-grid">
           <article class="tile">
-            <img src="assets/app-icon.png" alt="">
+            <img src="assets/app-icon.png" alt="PhoneClaw app icon">
             <h3>Native iOS Skills</h3>
             <p>Calendar, Reminders, Contacts, Clipboard, HealthKit, translation, images, and explicit Web Search.</p>
           </article>
           <article class="tile">
-            <img src="assets/liveland-launcher.png" alt="">
+            <img src="assets/liveland-launcher.png" alt="PhoneClaw LiveLand launcher icon">
             <h3>Live and LiveLand</h3>
             <p>Voice, camera-aware LIVE mode, widgets, Shortcuts, Control Center, and Dynamic Island status.</p>
           </article>
           <article class="tile">
-            <img src="assets/brand-mark.png" alt="">
+            <img src="assets/brand-mark.png" alt="PhoneClaw brand mark">
             <h3>Mobile runtime work</h3>
             <p>Model switching, resumable downloads, cache cleanup, history trimming, and local memory policy.</p>
           </article>
           <article class="tile">
-            <img src="assets/app-icon.png" alt="">
+            <img src="assets/app-icon.png" alt="PhoneClaw app icon">
             <h3>Mac as an edge node</h3>
             <p>Pair a Mac over LAN to use Ollama, Codex CLI, or Antigravity CLI while the phone keeps the agent experience.</p>
           </article>
@@ -312,9 +314,10 @@
         <article class="panel">
           <span class="panel-label">04 Inference</span>
           <h3>On-device or LAN</h3>
-          <p>LiteRT local models for the fully offline path, with optional Mac Gateway for heavier models on a trusted local machine.</p>
+          <p>LiteRT local models for the fully offline path, with optional Mac Gateway for heavier models on a trusted local machine. PhoneClaw's on-device runtime is Google LiteRT (running Gemma 4 E2B / E4B) and MiniCPM-V 4.6 — not Apple MLX.</p>
         </article>
       </div>
+      <p class="lang-note"><a href="mobile-agent-framework/">Read the full framework architecture</a></p>
     </div>
   </section>
 
@@ -434,6 +437,7 @@
       <a href="mobile-agent-framework/">Framework</a>
       <a href="privacy/">Privacy &amp; Data Flow</a>
       <a href="mac-remote/">Mac Remote</a>
+      <a href="benchmarks/">Benchmarks</a>
       <a href="faq/">FAQ</a>
       <a href="zh/">中文</a>
       <a href="ja/">日本語</a>

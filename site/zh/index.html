@@ -17,11 +17,11 @@
 <meta property="og:title" content="PhoneClaw - 面向手机的移动端本地 AI Agent 框架">
 <meta property="og:description" content="手机端本地优先 AI Agent 框架：端侧模型、原生 Skills、清晰隐私边界、LiveLand 交互和可选 Mac 远程推理。">
 <meta property="og:url" content="https://kellyvv.github.io/PhoneClaw/zh/">
-<meta property="og:image" content="https://kellyvv.github.io/PhoneClaw/assets/banner.jpg">
+<meta property="og:image" content="https://kellyvv.github.io/PhoneClaw/assets/social-card.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="PhoneClaw - 移动端本地 AI Agent 框架">
 <meta name="twitter:description" content="端侧模型、iOS Skills、隐私边界、LiveLand 和 Mac Gateway。">
-<meta name="twitter:image" content="https://kellyvv.github.io/PhoneClaw/assets/banner.jpg">
+<meta name="twitter:image" content="https://kellyvv.github.io/PhoneClaw/assets/social-card.png">
 
 <link rel="icon" href="../assets/app-icon.png">
 <link rel="stylesheet" href="../assets/style.css">
@@ -73,6 +73,7 @@
         <a class="button" href="https://github.com/kellyvv/PhoneClaw">查看源码</a>
       </div>
       <p class="disamb">PhoneClaw 框架面向手机、移动端设备、端侧设备、原生移动端 Skills 和手机端本地 Agent 工作流。</p>
+      <p class="disamb">本项目与 Android 自动化仓库 rohanarun/phoneclaw、GitHub 上的 phoneclaw 组织无关；Android 应用商店搜索结果中的同名 App 也是另一个产品。</p>
     </div>
   </div>
 </header>
@@ -171,7 +172,21 @@
           <p class="section-kicker">隐私</p>
           <h2>数据留在设备端，联网能力显式触发。</h2>
         </div>
-        <p class="section-copy">聊天、图片和个人数据默认留在设备端。联网搜索、打开网页和配对 Mac 远程推理是用户显式触发的能力。PhoneClaw 的本地路径支持完全离线运行。</p>
+        <p class="section-copy">聊天、图片和个人数据默认留在设备端。联网搜索、打开网页和配对 Mac 远程推理是用户显式触发的能力。PhoneClaw 的本地路径支持完全离线运行。在这条本地路径上，它可以作为本地私人 AI 助手使用。默认路径让 PhoneClaw 作为端侧 AI 助手在手机上完成任务。</p>
+      </div>
+      <div class="flow">
+        <article class="data-row">
+          <h3>留在设备端</h3>
+          <p>默认推理、原生 Skill 调用、日历、提醒事项、通讯录、剪贴板、健康数据摘要、图片和聊天。</p>
+        </article>
+        <article class="data-row warn">
+          <h3>显式联网动作</h3>
+          <p>实时联网搜索和打开公开网页会把请求发给搜索服务商或目标网站。</p>
+        </article>
+        <article class="data-row remote">
+          <h3>可选 Mac 推理</h3>
+          <p>配对后，请求经同一局域网发送到你的 Mac。使用本地 Ollama 模型时请求留在那台 Mac 上；Ollama 云端模型（-cloud 标签）和其他 CLI 提供方会把请求转发到各自的服务。</p>
+        </article>
       </div>
       <div class="hero-actions">
         <a class="button dark" href="../privacy/">查看 Privacy &amp; Data Flow</a>

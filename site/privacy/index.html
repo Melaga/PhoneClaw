@@ -13,11 +13,11 @@
 <meta property="og:title" content="PhoneClaw Privacy Policy">
 <meta property="og:description" content="How PhoneClaw handles local AI features, personal data, explicit network paths, and limited diagnostic information.">
 <meta property="og:url" content="https://kellyvv.github.io/PhoneClaw/privacy/">
-<meta property="og:image" content="https://kellyvv.github.io/PhoneClaw/assets/banner.jpg">
+<meta property="og:image" content="https://kellyvv.github.io/PhoneClaw/assets/social-card.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="PhoneClaw Privacy Policy">
 <meta name="twitter:description" content="Account-free local AI features, explicit network paths, and limited diagnostics.">
-<meta name="twitter:image" content="https://kellyvv.github.io/PhoneClaw/assets/banner.jpg">
+<meta name="twitter:image" content="https://kellyvv.github.io/PhoneClaw/assets/social-card.png">
 
 <link rel="icon" href="../assets/app-icon.png">
 <link rel="stylesheet" href="../assets/style.css">
@@ -277,6 +277,32 @@
           <h2>PhoneClaw 隐私政策摘要。</h2>
         </div>
         <p class="section-copy">PhoneClaw 不要求注册账号。默认本地路径在设备端处理提示词、AI 回复、图片和个人移动端数据。联网搜索、打开网页和 Mac Gateway 是用户显式选择的能力。PhoneClaw 可能收集有限的非个人使用与诊断信息，例如 App 版本、构建版本、设备型号、系统版本、语言区域、会话事件、模型下载状态、崩溃和错误信息，用于改进稳定性、下载可靠性和产品体验。PhoneClaw 不出售用户数据，也不将收集的数据用于广告追踪。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="data-flow" class="band white">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="section-kicker">Data flow</p>
+          <h2>Data flow at a glance.</h2>
+        </div>
+        <p class="section-copy">PhoneClaw works as a private AI assistant for phones: HealthKit, Calendar, and chat data stays on device by default in the local runtime.</p>
+      </div>
+      <div class="flow">
+        <article class="data-row">
+          <h3>On-device by default</h3>
+          <p>Chat, images, and personal data — Calendar, Reminders, Contacts, Clipboard, Health — stay on device by default in the local runtime.</p>
+        </article>
+        <article class="data-row warn">
+          <h3>Explicit network actions</h3>
+          <p>Web Search and opening a URL are explicit user-triggered actions.</p>
+        </article>
+        <article class="data-row remote">
+          <h3>Mac remote inference</h3>
+          <p><a href="../mac-remote/">Mac remote inference</a> sends the request to your paired Mac on the same LAN. With local Ollama models the request stays on that Mac. Ollama cloud models (-cloud tags) and other CLI providers forward the request to their own service.</p>
+        </article>
       </div>
     </div>
   </section>

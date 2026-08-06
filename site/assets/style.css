@@ -395,6 +395,14 @@ h3 {
   object-fit: cover;
 }
 
+.showcase.glyph img {
+  width: 112px;
+  height: 112px;
+  min-height: 0;
+  margin: 104px auto 0;
+  object-fit: contain;
+}
+
 .showcase::after {
   content: "";
   position: absolute;

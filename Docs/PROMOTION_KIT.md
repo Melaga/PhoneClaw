@@ -4,7 +4,11 @@ Short copy, post templates, and positioning notes for sharing PhoneClaw.
 
 ## One-line positioning
 
-English:
+Canonical (use this verbatim in launches, listings, and directory submissions — matches Docs/SEO_GEO_STRATEGY.md):
+
+> PhoneClaw is a mobile-native local AI Agent framework for phones and edge devices. Its iOS runtime runs on-device models and native iOS Skills by default, and supports optional Mac Gateway remote inference for heavier local models.
+
+English (short variant):
 
 > PhoneClaw turns phones into local AI agent runtimes with on-device models, native mobile Skills, LiveLand, and optional Mac Gateway inference.
 
@@ -79,13 +83,16 @@ TestFlight: https://testflight.apple.com/join/YuUSwq78
 ## Hacker News / Reddit style post
 
 ```text
-Show HN: PhoneClaw - a local AI agent runtime for phones
+Show HN: PhoneClaw - a mobile-native local AI Agent framework
+
+PhoneClaw is a mobile-native local AI Agent framework for phones and edge devices. Its iOS runtime runs on-device models and native iOS Skills by default, and supports optional Mac Gateway remote inference for heavier local models.
 
 PhoneClaw runs inference and Skill calls on device. It is designed for practical phone workflows: calendar queries, reminders, contacts, HealthKit summaries, clipboard, image understanding, voice, LiveLand, and explicit Web Search.
 
 The Skill system is file-driven: each capability is defined by SKILL.md and backed by permission-scoped native mobile tools.
 
 GitHub: https://github.com/kellyvv/PhoneClaw
+Site: https://kellyvv.github.io/PhoneClaw/
 TestFlight: https://testflight.apple.com/join/YuUSwq78
 ```
 
@@ -118,21 +125,30 @@ Point to show: multimodal reasoning on the phone.
 ## Suggested GitHub topics
 
 ```text
-gemma
-on-device-ai
-local-agent
-mobile-agent
+agent-framework
 ai-agent
-phone-harness
-phone-loop
-litert
-swift
+edge-ai
+gemma
+healthkit
 ios
+litert
+local-agent
+local-ai
+mobile-agent
+mobile-ai
+offline-ai
+ollama
+on-device-ai
+swift
+swiftui
 ```
 
 ## Useful links
 
 - GitHub: https://github.com/kellyvv/PhoneClaw
+- Site: https://kellyvv.github.io/PhoneClaw/
+- Chinese landing: https://kellyvv.github.io/PhoneClaw/zh/
+- Benchmarks: https://kellyvv.github.io/PhoneClaw/benchmarks/
 - TestFlight: https://testflight.apple.com/join/YuUSwq78
 - On-device Gemma note: ON_DEVICE_GEMMA.md
 - Skill system note: SKILL_SYSTEM.md
