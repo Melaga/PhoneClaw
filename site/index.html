@@ -161,7 +161,7 @@
 
 <header class="hero">
   <div class="hero-scrim"></div>
-  <div class="wrap">
+  <div class="wrap hero-grid">
     <div class="hero-content">
       <p class="eyebrow">Mobile-native local AI agent framework</p>
       <h1>PhoneClaw</h1>
@@ -177,6 +177,28 @@
         <li><strong>Optional edge inference</strong><span>Mac Gateway with Ollama or CLI models</span></li>
       </ul>
       <p class="disamb">PhoneClaw is built for mobile devices, native mobile capabilities, and phone-first local agent workflows. PhoneClaw (this project) is unrelated to the Android automation repo "rohanarun/phoneclaw" or the "phoneclaw" GitHub organization. Android app-store search results may also show a separate app with the same name.</p>
+    </div>
+    <div class="hero-device" aria-hidden="true">
+      <div class="phone">
+        <div class="island">
+          <span class="island-dot"></span>
+          <span class="island-stages">
+            <span>received</span>
+            <span>understanding</span>
+            <span>querying</span>
+            <span>preparing</span>
+            <span>completed</span>
+          </span>
+        </div>
+        <div class="trace">
+          <p class="trace-user">"How many steps did I take today?"</p>
+          <p class="trace-line"><span class="t-label">skill</span>health · scoped read</p>
+          <p class="trace-line"><span class="t-label">model</span>gemma-4-e2b · LiteRT</p>
+          <p class="trace-line"><span class="t-label">net</span>no network used</p>
+          <p class="trace-done">Answered on device.</p>
+        </div>
+        <div class="phone-home"></div>
+      </div>
     </div>
   </div>
 </header>
@@ -430,6 +452,7 @@
 
 <footer class="footer">
   <div class="wrap">
+    <p class="footer-word" aria-hidden="true">PhoneClaw</p>
     <div class="footer-row">
       <a href="on-device-gemma/">Models</a>
       <a href="skills/">Skills</a>

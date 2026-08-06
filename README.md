@@ -30,38 +30,6 @@ PhoneClaw is a local AI agent framework for phones and edge devices. It runs Gem
   <p><em>Demo: PhoneClaw running Gemma 4 on-device via LiteRT, executing native iOS Skills.</em></p>
 </div>
 
-## Architecture
-
-```mermaid
-flowchart TD
-    input["Input<br/>text / voice / image / LIVE / LiveLand"] --> routing["Skill routing"]
-    routing --> skills["Native iOS Skills<br/>Calendar · Reminders · Contacts · Health<br/>Clipboard · Web Search · Translate"]
-    skills --> inference["Inference"]
-    inference --> ondevice["On-device<br/>Gemma 4 E2B / E4B via LiteRT · MiniCPM-V 4.6"]
-    inference --> gateway["Optional<br/>Mac Gateway over LAN"]
-```
-
-<details>
-<summary><strong>Positioning and boundaries</strong></summary>
-
-### What is PhoneClaw?
-
-PhoneClaw turns a phone into a local AI agent runtime: models run on device, capabilities execute through native mobile Skills, and interaction spans text, voice, images, LIVE mode, and LiveLand.
-
-### How does PhoneClaw handle my data?
-
-In PhoneClaw's local runtime, chat, images, and personal data (Calendar, Reminders, Contacts, Clipboard, HealthKit) stay on device by default. Web Search, opening a URL, and paired Mac remote inference are explicit user-triggered capabilities. With a paired Mac the request goes to that Mac — with Ollama it stays on the Mac; with a CLI or other upstream provider, that provider's data policy applies.
-
-### What can PhoneClaw do?
-
-Using natural language: Calendar (create events, read schedule, busy/free analysis), Reminders, Contacts (find, save, update, delete), Clipboard, HealthKit summaries (steps, distance, calories, heart rate, sleep, workouts), image understanding, voice and LIVE real-time conversation, LiveLand from the Dynamic Island, translation, and explicit Web Search when realtime information is needed.
-
-### Why is PhoneClaw a mobile-native agent framework?
-
-PhoneClaw is a mobile-native Agent framework for phones, on-device models, and edge devices. The runtime is optimized around real mobile constraints: local model inference, mobile memory budgets, resumable model downloads, Skill routing, multi-turn tool calls, permission boundaries, Live / LiveLand interaction, and optional LAN-based Mac remote inference. Its core value is a phone-first agent runtime that combines local models, native mobile capabilities, and mobile interaction surfaces.
-
-</details>
-
 ## Latest Updates
 
 **2026-06-23**

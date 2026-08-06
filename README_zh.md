@@ -29,38 +29,6 @@ PhoneClaw 是面向手机和端侧设备的本地 AI Agent 框架。它在设备
   <p><em>演示：PhoneClaw 在设备端通过 LiteRT 运行 Gemma 4，并执行原生 iOS Skills。</em></p>
 </div>
 
-## 架构
-
-```mermaid
-flowchart TD
-    input["输入<br/>文字 / 语音 / 图片 / LIVE / LiveLand"] --> routing["Skill 路由"]
-    routing --> skills["原生 iOS Skills<br/>日历 · 提醒事项 · 通讯录 · 健康数据<br/>剪贴板 · 联网搜索 · 翻译"]
-    skills --> inference["推理"]
-    inference --> ondevice["端侧<br/>Gemma 4 E2B / E4B（LiteRT）· MiniCPM-V 4.6"]
-    inference --> gateway["可选<br/>局域网 Mac Gateway"]
-```
-
-<details>
-<summary><strong>定位与边界</strong></summary>
-
-### PhoneClaw 是什么？
-
-PhoneClaw 把手机变成一个本地 AI Agent 运行时：模型在设备端运行，能力通过原生移动端 Skills 执行，交互入口覆盖文字、语音、图片、LIVE 和 LiveLand。
-
-### 数据怎样处理？
-
-在 PhoneClaw 的本地 runtime 中，聊天、图片和个人数据（日历、提醒事项、通讯录、剪贴板、健康数据）默认留在设备端处理。联网搜索、打开网页和 Mac 远程推理是显式触发能力；配对 Mac 时请求会发到你那台 Mac——选 Ollama 留在本机；选 CLI 或其它上游 provider，则以对应 provider 的数据策略为准。
-
-### 能做什么？
-
-用自然语言完成：日历（创建事件、查询日程、忙闲分析）、提醒事项、通讯录（查询、保存、更新、删除）、剪贴板、健康数据摘要（步数、距离、卡路里、心率、睡眠、运动）、图片理解、语音与 LIVE 实时对话、灵动岛 LiveLand、翻译，以及明确需要时的联网搜索。
-
-### 为什么说 PhoneClaw 是移动端 Agent 框架？
-
-PhoneClaw 是面向手机、移动端和端侧设备设计的 Agent 框架，围绕移动端的真实约束做了端侧优化：本地模型推理、移动端内存预算、模型下载与断点续传、Skill 路由、多轮工具调用、权限边界、Live / LiveLand 交互，以及可选的 Mac 局域网远程推理。它的核心价值是把本地模型、原生移动端能力和手机交互入口组织成一个移动端 Agent 运行时。
-
-</details>
-
 ## 最新更新
 
 **2026-06-23**
